@@ -1,0 +1,17 @@
+<%- include('./partials/header.ejs') %>
+    <div class="show-flexbox">
+    <div class="show-name-actions-container">
+    <h1> <%= item.name %> </h1>
+    &nbsp;
+    <form action="/items/<%=item.id%>?_method=DELETE" method="POST">
+        <button class="checkbox-btn"><span id="checkbox-icon" class="material-symbols-outlined"></span></button>  
+    </form>
+    &nbsp;
+    <a href="/items/<%=item.id%>/edit">
+        <button class="edit-btn"><span id="edit-btn-icon" class="material-symbols-outlined">edit</span></button>
+    </a>
+    </div>
+    <p class="show-notes"> <%= item.notes %> </p>
+    </div>
+</body>
+</html>

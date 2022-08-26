@@ -1,0 +1,300 @@
+/*Global styling*/
+body {
+    background-color: rgb(255, 253, 253);
+    margin: 0px;
+}
+
+nav {
+    text-align: center;
+    background-color:#82A3FF;
+    padding: 10px;
+}
+
+.nav-index-text {
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-index-text:hover {
+    color: rgb(233, 231, 231);
+}
+
+.nav-index-link {
+    text-decoration: none;
+}
+
+h1 {
+    color: #82A3FF;
+}
+
+label {
+    color: #82A3FF;
+    font-weight: 700;
+}
+
+.checkbox-btn, .edit-btn, .add-btn {
+    border: none;
+    background-color: rgb(255, 253, 253);
+}
+
+.checkbox-btn {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+/*Checkbox default is for it to be an empty box*/
+#checkbox-icon::before {
+    content:"check_box_outline_blank";
+    color: #82A3FF;
+}
+
+/*checkbox hover state allows desktop users to see clicking will check it off*/
+#checkbox-icon:hover::before {
+    content:"check_box";
+    color: #ff8a82;
+}
+
+/*checkbox active state (aka clicked) provided to show mobile users it was checked*/
+#checkbox-icon:active::before {
+    content:"check_box";
+    color: #ff8a82;
+}
+
+/*Homepage styling*/
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.homepage-flexbox {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border:  5px #82A3FF;
+    border-style: double;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.homepage-title {
+    text-align: center;
+}
+
+.homepage-intro {
+    padding: 0% 10% 0% 10%;
+}
+
+.homepage-buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.signin-btn, .create-account-btn {
+    height: 30px;
+    border: solid 2px #82A3FF;
+    border-radius: 5px;
+    color: #82A3FF;
+    background-color: rgb(255, 253, 253);
+}
+
+.signin-btn:hover, .create-account-btn:hover {
+    background-color: #c9d7fc;
+}
+
+/*Index page styling*/
+.index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-item-list {
+    width: 100vw;
+    height: 70vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    list-style: none;
+    padding-left: 0;
+}
+
+.index-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: -15px 0px -15px 15px;
+}
+
+.index-item-text {
+    color: #82A3FF;
+}
+
+.index-item-text:hover {
+    color: #5e89ff;
+}
+
+.index-add-form {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+hr {
+    height: 2px;
+    border: none;
+    background-color: #e4e4e4;
+}
+
+.add-label {
+    font-size: 20px;
+}
+
+.add-input-field {
+    height: 18px;
+    border: solid 2px #82A3FF;
+    padding-left: 5px;
+}
+
+.add-btn {
+    height: 25px;
+}
+
+
+#add-btn-icon {
+    color: #82A3FF;
+    font-size: 30px;
+    margin-top: -3px;
+    margin-left: -3px;
+} 
+
+/*add button default color is blue*/
+#add-btn-icon::before {
+    color: #82A3FF;
+}
+
+/*add button hover state is green to allow desktop users to see clicking will add*/
+#add-btn-icon:hover {
+    color: #82ff82;
+}
+
+/*green add button active state (aka clicked) provided to show mobile users it was added*/
+#add-btn-icon:active {
+    color: #82ff82;
+}
+
+/*Show page styling*/
+.item-image {
+    width: 15vw;
+}
+
+.show-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.show-name-actions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-btn {
+    height: 25px;
+}
+
+
+#edit-btn-icon {
+    color: #82A3FF;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-left: -10px;
+} 
+
+.show-notes {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height: 25vh;
+    overflow-y: scroll;
+}
+
+/*edit button default color is blue*/
+#edit-btn-icon::before {
+    color: #82A3FF;
+}
+
+/*edit button hover state is orange to allow desktop users to see clicking will edit*/
+#edit-btn-icon:hover {
+    color: #ffc982;
+}
+
+/*orange edit button active state (aka clicked) provided to show mobile users it was clicked*/
+#edit-btn-icon:active {
+    color: #ffc982;
+}
+
+/*Edit page styling*/
+.edit-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+}
+
+.edit-flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #82A3FF;
+    font-weight: 700;
+}
+
+.edit-name, .edit-notes {
+    width: 25vw;
+}
+
+.edit-notes-section {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    resize: none;
+    height: 15vh;
+}
+
+.edit-submit-btn {
+    margin-left: 50px;
+    border: solid 2px #82A3FF;
+    border-radius: 7px;
+}
+
+.edit-submit-btn:hover, .edit-submit-btn:active {
+    background-color: #ffc982;
+}
